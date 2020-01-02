@@ -1,0 +1,526 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:tools="http://schemas.android.com/tools">
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<LinearLayout
+    android:id="@+id/step1_register"
+android:visibility="visible"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Register"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_height="wrap_content">
+
+
+
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/name_reg"
+            android:layout_marginTop="8dp"
+            android:hint="Name"
+            android:imeOptions="actionNext"
+            android:inputType="text"
+            android:maxLength="40"
+            android:maxLines="1"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Aadhar Number"
+            app:met_floatingLabelTextColor="@color/colorAccent"
+            app:met_primaryColor="@color/black"
+            app:met_textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/aadhar_num_reg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Aadhar Number"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        android:maxLength="12"
+        android:maxLines="1"
+        app:met_baseColor="@color/colorPrimaryDark"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Aadhar Number"
+        app:met_floatingLabelTextColor="@color/colorAccent"
+        app:met_maxCharacters="12"
+        app:met_primaryColor="@color/black"
+        app:met_textColor="@color/black" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Address"
+        android:id="@+id/address_reg"
+        android:imeOptions="actionNext"
+        android:inputType="text"
+        android:maxLines="10"
+        android:minLines="3"
+        app:met_baseColor="@color/colorPrimaryDark"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Address"
+        app:met_floatingLabelTextColor="@color/colorAccent"
+        app:met_primaryColor="@color/black"
+        app:met_textColor="@color/black" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:hint="Contact Number"
+        android:id="@+id/contact_reg"
+        android:imeOptions="actionNext"
+        android:inputType="number"
+        app:met_baseColor="@color/colorPrimaryDark"
+        app:met_floatingLabel="highlight"
+        app:met_floatingLabelText="Contact Number"
+        app:met_floatingLabelTextColor="@color/colorAccent"
+        app:met_primaryColor="@color/black"
+        app:met_textColor="@color/black" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <com.rengwuxian.materialedittext.MaterialEditText
+            android:id="@+id/birthdate_reg"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:hint="Birthdate(dd-MM-yyyy)"
+            android:imeOptions="actionDone"
+            android:inputType="text"
+            android:maxLines="1"
+            app:met_baseColor="@color/colorPrimaryDark"
+            app:met_floatingLabel="highlight"
+            app:met_floatingLabelText="Date of Birth(dd-MM-yyyy)"
+            app:met_floatingLabelTextColor="@color/colorAccent"
+            app:met_primaryColor="@color/black"
+            app:met_textColor="@color/black" />
+
+        <ImageButton
+            android:id="@+id/choose_date_reg"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:paddingTop="4dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:scaleType="centerInside"
+            android:src="@drawable/ic_date_range_black_24dp" />
+
+
+    </LinearLayout>
+
+
+
+    <android.support.v7.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:layout_marginTop="15dp"
+        app:cardElevation="1dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:id="@+id/next_register"
+            android:background="@color/colorAccent"
+            android:gravity="center"
+            android:padding="8dp"
+            android:text="NEXT"
+            android:textColor="@color/white"
+            android:textSize="18sp" />
+    </android.support.v7.widget.CardView>
+
+
+</LinearLayout>
+
+    <LinearLayout
+        android:visibility="gone"
+        android:id="@+id/step2_register"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:background="@color/white"
+            android:elevation="3dp">
+
+            <ImageButton
+                android:id="@+id/back_2"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:background="?attr/selectableItemBackgroundBorderless"
+                android:padding="16dp"
+                android:scaleType="centerInside"
+                android:src="@drawable/back_black" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_marginRight="48dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:textStyle="bold"
+                android:fontFamily="sans-serif-smallcaps"
+                android:text="You are almost there. Just enter these details."
+                android:textColor="@color/black"
+                android:textSize="20sp" />
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/black"/>
+
+        <LinearLayout
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+    android:layout_width="match_parent"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Essential Information"
+        android:textColor="@color/white"
+        android:background="@color/colorAccent"
+        android:padding="8dp"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:fontFamily="sans-serif-smallcaps"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="horizontal"
+        android:weightSum="2"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content">
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:textColor="@color/black"
+            android:textSize="16sp"
+            android:layout_margin="4dp"
+            android:text="Height(cm)"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:inputType="number"
+                android:id="@+id/height_reg"
+                android:hint="Enter height"
+                android:textSize="16sp"
+          />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical"
+            android:layout_marginTop="4dp"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_margin="4dp"
+                android:text="Weight(kg)"/>
+
+            <EditText
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="Enter weight"
+                android:inputType="number"
+                android:id="@+id/weight_reg"
+                android:textSize="16sp"
+                />
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textSize="16sp"
+                android:layout_marginTop = "8dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:gravity="center"
+                android:text="Enter your blood group"/>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="Enter blood group"
+                android:inputType="text"
+                android:id="@+id/blood_group_reg"
+                android:textSize="16sp"
+                />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_margin="4dp"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="12dp"
+            android:background="@color/black"/>
+
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Emergency Contacts"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:background="@color/colorAccent"
+            android:padding="8dp"
+            android:fontFamily="sans-serif-smallcaps"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:textColor="@color/black"
+            android:text="Enter name of emergency contact"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Name"
+            android:id="@+id/emergency_name_reg"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:textColor="@color/black"
+            android:text="Enter contact of emergency contact"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Contact"
+            android:id="@+id/emergency_contact_reg"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+
+
+
+    </LinearLayout>
+
+
+        <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginTop="12dp"
+        android:background="@color/black"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Medicinal Records till date"
+            android:textColor="@color/white"
+            android:background="@color/colorAccent"
+            android:padding="8dp"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="4dp"
+            android:layout_marginBottom="4dp"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:fontFamily="sans-serif-smallcaps"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:layout_margin="8dp"
+            android:textColor="@color/black"
+            android:text="Enter your chronic medical conditions, if any"/>
+
+        <EditText
+            android:id="@+id/chronic_medical_condition_reg"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="None"
+            android:textSize="16sp"
+            android:layout_marginBottom="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginRight="8dp"
+            android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="Enter your ongoing medications, if any"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="None"
+        android:id="@+id/ongoing_medication_reg"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="Enter allergies and reactions, if any"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="None"
+        android:id="@+id/allergy_reg"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="16sp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/black"
+        android:text="Enter family medical history(diabetes, cancer, etc), if any"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="None"
+        android:id="@+id/family_history_reg"
+        android:textSize="16sp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:scrollbarAlwaysDrawVerticalTrack="true"/>
+
+</LinearLayout>
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="8dp"
+            android:layout_marginLeft="8dp"
+            android:layout_marginTop="15dp"
+            app:cardElevation="1dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_weight="1"
+                android:layout_marginBottom="8dp"
+                android:id="@+id/final_register"
+                android:background="@color/colorAccent"
+                android:gravity="center"
+                android:padding="8dp"
+                android:text="REGISTER"
+                android:textColor="@color/white"
+                android:textSize="18sp" />
+        </android.support.v7.widget.CardView>
+
+
+    </LinearLayout>
+    </RelativeLayout>
+</ScrollView>

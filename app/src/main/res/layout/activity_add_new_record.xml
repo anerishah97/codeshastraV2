@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.codeshastrahealthcarev1.addNewRecord">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="@color/white"
+        android:elevation="3dp">
+
+        <ImageButton
+            android:id="@+id/back"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:padding="16dp"
+            android:scaleType="centerInside"
+            android:src="@drawable/back_black" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginRight="48dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Make a new entry"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="12dp"
+        android:textColor="@color/black"
+        android:text="Enter your symptoms"/>
+
+    <EditText
+        android:textSize="16sp"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:id="@+id/symptoms_newrec"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:hint="Symptom"/>
+
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="12dp"
+        android:textColor="@color/black"
+        android:text="Enter your diagnosis"/>
+
+    <EditText
+        android:textSize="16sp"
+        android:layout_margin="12dp"
+        android:id="@+id/diagnosis_newrec"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:hint="Diagnosis"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="18sp"
+        android:layout_margin="12dp"
+        android:textColor="@color/black"
+        android:text="Enter prescribed medicine/ medicine taken"/>
+
+    <EditText
+        android:textSize="16sp"
+        android:id="@+id/medicine_newrec"
+        android:layout_margin="12dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:scrollbarAlwaysDrawVerticalTrack="true"
+        android:hint="Medicine and dosage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="ADD RECORD"
+        android:background="@color/colorAccent"
+        android:textColor="@color/white"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:id="@+id/add_newrec"
+        android:fontFamily="sans-serif-smallcaps"
+        android:layout_margin="4dp"/>
+
+</LinearLayout>
